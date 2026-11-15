@@ -88,7 +88,7 @@ public class ConcreteFactory extends AContainer implements RecipeDisplayItem {
 
     @Override
     public String getInventoryTitle() {
-        return "&c混凝土搅拌机";
+        return "&cConcrete Factory";
     }
 
     @Override

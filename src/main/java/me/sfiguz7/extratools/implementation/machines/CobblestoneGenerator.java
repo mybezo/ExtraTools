@@ -33,7 +33,7 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
 
     private static final int ENERGY_CONSUMPTION = 32;
     private final int[] border = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 18, 19, 20, 21, 22, 27, 28, 29, 30,
-        31, 36, 37, 38, 39, 40, 41, 42, 43, 44, 22};
+        31, 36, 37, 38, 39, 40, 41, 42, 43, 44};
     private final int[] inputBorder = {};
     private final int[] outputBorder = {14, 15, 16, 17, 23, 26, 32, 33, 34, 35};
     private int decrement = 2;
@@ -150,7 +150,7 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
                 if (getCharge(b.getLocation()) >= ENERGY_CONSUMPTION) {
                     BlockMenu menu = BlockStorage.getInventory(b);
 
-                    if (!menu.fits(output, getOutputSlots())) {
+                    if (menu == null || !menu.fits(output, getOutputSlots())) {
                         return;
                     }
 

@@ -15,19 +15,19 @@ public final class ETItems {
     /* Category */
     public static final ItemGroup extra_tools = new ItemGroup(new NamespacedKey(ExtraTools.getInstance(),
         "extra_tools"),
-        new CustomItemStack(Material.DIAMOND_AXE, "&4额外工具")
+        new CustomItemStack(Material.DIAMOND_AXE, "&4Extra Tools")
     );
     /* Items */
     public static final SlimefunItemStack HAMMER = new SlimefunItemStack("HAMMER",
         Material.IRON_PICKAXE,
-        "&c铁锤",
+        "&cHammer",
         "",
-        "&9粉碎方块"
+        "&9Pulverizes blocks"
     );
     /* Machines */
     public static final SlimefunItemStack GOLD_TRANSMUTER = new SlimefunItemStack("GOLD_TRANSMUTER",
         Material.YELLOW_TERRACOTTA,
-        "&6黄金转化器",
+        "&6Gold Transmuter",
         "",
         LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
         LoreBuilder.powerBuffer(256),
@@ -35,33 +35,33 @@ public final class ETItems {
     );
     public static final SlimefunItemStack ELECTRIC_COMPOSTER = new SlimefunItemStack("ELECTRIC_COMPOSTER",
         Material.MAGENTA_TERRACOTTA,
-        "&c电动堆肥机",
+        "&cElectric Composter",
         "",
         LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
-        "&8\u21E8 &7速度: 1x",
+        "&8\u21E8 &7Speed: 1x",
         LoreBuilder.powerBuffer(256),
         LoreBuilder.powerPerSecond(18)
     );
     public static final SlimefunItemStack ELECTRIC_COMPOSTER_2 = new SlimefunItemStack("ELECTRIC_COMPOSTER_2",
         Material.MAGENTA_TERRACOTTA,
-        "&c电动堆肥机 &7(&eII&7)",
+        "&cElectric Composter &7(&eII&7)",
         "",
         LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
-        "&8\u21E8 &7速度: 4x",
+        "&8\u21E8 &7Speed: 4x",
         LoreBuilder.powerBuffer(256),
         LoreBuilder.powerPerSecond(50)
     );
     public static final SlimefunItemStack COBBLESTONE_GENERATOR = new SlimefunItemStack("COBBLESTONE_GENERATOR",
         Material.POLISHED_ANDESITE,
-        "&c圆石发生器",
+        "&cCobblestone Generator",
         "",
         LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
-        LoreBuilder.powerBuffer(256),
-        LoreBuilder.powerPerSecond(36)
+        LoreBuilder.powerBuffer(512),
+        LoreBuilder.powerPerSecond(32)
     );
     public static final SlimefunItemStack VAPORIZER = new SlimefunItemStack("VAPORIZER",
         Material.RED_STAINED_GLASS,
-        "&c蒸馏器",
+        "&cVaporizer",
         "",
         LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
         LoreBuilder.powerBuffer(256),
@@ -69,7 +69,7 @@ public final class ETItems {
     );
     public static final SlimefunItemStack CONCRETE_FACTORY = new SlimefunItemStack("CONCRETE_FACTORY",
         Material.BLACK_CONCRETE,
-        "&4混凝土搅拌机",
+        "&4Concrete Factory",
         "",
         LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
         LoreBuilder.powerBuffer(256),
@@ -77,12 +77,12 @@ public final class ETItems {
     );
     public static final SlimefunItemStack PULVERIZER = new SlimefunItemStack("PULVERIZER",
         Material.ORANGE_TERRACOTTA,
-        "&c方块过筛机",
+        "&cPulverizer",
         "",
         LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
-        "&8\u21E8 &7速度: 1x",
+        "&8\u21E8 &7Speed: 4x",
         LoreBuilder.powerBuffer(256),
-        LoreBuilder.powerPerSecond(18)
+        LoreBuilder.powerPerSecond(50)
     );
     private ETItems() {
     }

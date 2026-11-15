@@ -29,8 +29,8 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
         instance = this;
 
         if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
-            getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
-            getLogger().log(Level.SEVERE, "从此处下载: https://50L.cc/gzlib");
+            getLogger().log(Level.SEVERE, "This plugin requires GuizhanLibPlugin to run!");
+            getLogger().log(Level.SEVERE, "Download it here: https://50L.cc/gzlib");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
@@ -48,12 +48,12 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
         new Hammer().register(this);
         new Research(new NamespacedKey(this, "HAMMER"),
-            ++researchId, "锤子", 3)
+            ++researchId, "Hammer", 3)
             .addItems(ETItems.HAMMER).register();
 
         new GoldTransmuter().register(this);
         new Research(new NamespacedKey(this, "GOLD_TRANSMUTER"),
-            ++researchId, "黄金转化器", 12)
+            ++researchId, "Gold Transmuter", 12)
             .addItems(ETItems.GOLD_TRANSMUTER).register();
 
         new ElectricComposter(ElectricComposter.Tier.ONE) {
@@ -70,7 +70,7 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
         }.register(this);
         new Research(new NamespacedKey(this, "ELECTRIC_COMPOSTER"),
-            ++researchId, "电动堆肥机", 18)
+            ++researchId, "Electric Composter", 18)
             .addItems(ETItems.ELECTRIC_COMPOSTER).register();
 
         new ElectricComposter(ElectricComposter.Tier.TWO) {
@@ -87,27 +87,27 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
         }.register(this);
         new Research(new NamespacedKey(this, "ELECTRIC_COMPOSTER_2"),
-            ++researchId, "电动堆肥机 II", 18)
+            ++researchId, "Electric Composter II", 18)
             .addItems(ETItems.ELECTRIC_COMPOSTER_2).register();
 
         new CobblestoneGenerator().register(this);
         new Research(new NamespacedKey(this, "COBBLESTONE_GENERATOR"),
-            ++researchId, "圆石生成器", 40)
+            ++researchId, "Cobblestone Generator", 40)
             .addItems(ETItems.COBBLESTONE_GENERATOR).register();
 
         new Vaporizer().register(this);
         new Research(new NamespacedKey(this, "VAPORIZER"),
-            ++researchId, "蒸馏器", 18)
+            ++researchId, "Vaporizer", 18)
             .addItems(ETItems.VAPORIZER).register();
 
         new ConcreteFactory().register(this);
         new Research(new NamespacedKey(this, "CONCRETE_FACTORY"),
-            ++researchId, "混凝土搅拌机", 12)
+            ++researchId, "Concrete Factory", 12)
             .addItems(ETItems.CONCRETE_FACTORY).register();
 
         new Pulverizer().register(this);
         new Research(new NamespacedKey(this, "PULVERIZER"),
-            ++researchId, "方块过筛机", 18)
+            ++researchId, "Pulverizer", 18)
             .addItems(ETItems.PULVERIZER).register();
 
     }
