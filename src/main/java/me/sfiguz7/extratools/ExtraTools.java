@@ -10,7 +10,6 @@ import me.sfiguz7.extratools.implementation.machines.Pulverizer;
 import me.sfiguz7.extratools.implementation.machines.Vaporizer;
 import me.sfiguz7.extratools.implementation.tools.Hammer;
 import me.sfiguz7.extratools.lists.ETItems;
-import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -37,10 +36,6 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
         if (!new File(getDataFolder(), "config.yml").exists()) {
             saveDefaultConfig();
-        }
-
-        if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Build")) {
-            GuizhanUpdater.start(this, getFile(), "SlimefunGuguProject", "ExtraTools", "master");
         }
 
         int bStatsId = 6945;
